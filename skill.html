@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="golu.png" type=" image/x-icon ">
+    <title>Ganesh Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-10">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skill.html">My Skill</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+   
+    <div class="container">
+        <div class="album py-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="bd-placeholder-img card-img-top" width="100%" height="225">
+                            <img src="data:image/png;base64,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"
+                                class="card-img-top " alt="... ">
+                        </div>
+                        <div class="card-body ">
+                            <div class="d-row justify-content-between align-items-center ">
+                                <p class="card-text justify-content-center ">
+                                    Python is a multi-paradigm programming language. Object-oriented programming and structured programming are fully supported, and many of its feature
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="card shadow-sm ">
+                        <div class="bd-placeholder-img card-img-top" width="100%" height="225">
+                            <img src="https://blog.eduonix.com/wp-content/uploads/2018/10/Django-696x500.jpg" class=" card-img-top " alt="... ">
+                        </div>
+                        <div class="card-body ">
+                            <div class="d-row justify-content-between align-items-center ">
+                                <p class="card-text justify-content-center ">
+                                    Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to
+                                    reinvent the wheel. It’s free and open source,Django's primary goal is to ease the creation of complex, database-driven websites.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="card shadow-sm ">
+                        <div class="bd-placeholder-img card-img-top " width="100% " height="225 ">
+                            <img src="data:image/png;base64,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 "
+                                class="card-img-top " alt="... ">
+                        </div>
+                        <div class="card-body ">
+                            <div class="d-row justify-content-between align-items-center ">
+                                <p class="card-text justify-content-center ">
+                                    MySQL Database Service with HeatWave MySQL Database Service is a fully managed database service to deploy cloud-native applications. HeatWave, an integrated, high-performance query accelerator that boosts MySQL performance by 400x. MySQL is free and open-source
+                                    software under the terms of the GNU General Public License, and is also available under a variety of proprietary licenses. (now Oracle Corporation).
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center  text-dark my-auto">
+        <h6>Other My Skill</h6>
+    </div>
+    <div class="container text-center  text-danger">
+        
+        <div class="container ">
+            <div class="row">
+                <div class="col">
+                    HTML,CSS,Bootstrap
+                </div>
+                <div class="col">
+                    Javascript,Jquery
+                </div>
+                <div class="col">
+                    Web Hosting,Desktop Application
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <table class="table table-dark table-striped">
+
+            <thead>
+                <div class="container text-center text-danger">
+                    <h6>Grow Together</h6>
+                </div>
+                <tr>
+                    <th scope="col">Learn Here</th>
+                    <th scope="col">Others Link</th>
+                    <th scope="col">Trending Language</th>
+                    <th scope="col">Follo us</th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+                <tr>
+                    <td>
+                        <div class="text-decoration-none">
+                            <a href="https://www.w3schools.com/" style="text-decoration: none; color: #e7eaee;">W3
+                                School</a>
+
+                    </td>
+                    <td>
+                        <div class="text-decoration-none">
+                            <a href="https://stackoverflow.com/" style="text-decoration: none; color: #e7eaee;">stack
+                                Overflow</a>
+                    </td>
+
+                    <td>
+                        <div class="text-decoration-none">
+                            <a href="https://www.python.org/" style="text-decoration: none; color: #e7eaee;">Python</a>
+                    </td>
+                    <td>
+                        <a href=" https://www.instagram.com/ganesh.amale.9822/ "><img
+                                src="insta.png"></a>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+                        <div class="text-decoration-none">
+                            <a href="https://www.javatpoint.com/" style="text-decoration: none; color: #e7eaee;">Java
+                                Point </a>
+                    </td>
+                    <td>
+                        <div class="text-decoration-none">
+                            <a href="https://github.com/" style="text-decoration: none; color: #e7eaee;">Git Hub </a>
+                    </td>
+                    <td>
+                        <div class="text-decoration-none">
+                            <a href="https://www.djangoproject.com/"
+                                style="text-decoration: none; color: #e7eaee;">Django</a>
+                    </td>
+                    <td>
+                        <a href="https://www.facebook.com/ganesh.amale.9822/ "><img
+                                src="fb.png"></a>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+                        <div class="text-decoration-none">
+                            <a href="https://www.programiz.com/"
+                                style="text-decoration: none; color: #e7eaee;">Programiz</a>
+                    </td>
+                    <td>
+                        <div class="text-decoration-none">
+                            <a href="https://www.quora.com/" style="text-decoration: none; color: #e7eaee;">Quara</a>
+                    </td>
+                    <td>
+                        <div class="text-decoration-none">
+                            <a href="https://angular.io/" style="text-decoration: none; color: #e7eaee;">JS Angular</a>
+                        </div>
+                    </td>
+                    </td>
+                    <td>
+                        <a href="https://github.com/GaneshAmale "><img src="git.png"></a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="card text-center ">
+        <div class="card-header ">
+            Copyright © 2021 Developed & Maintain by Ganesh Amale
+        </div>
+
+    </div>
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
+    -->
+</body>
+
+</html>
